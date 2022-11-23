@@ -7,6 +7,12 @@ if (action.type === 'increment') {
     }
 }
 
+if (action.type ==='increase') {
+    return {
+        counter: state.counter + action.amount,
+    }
+}
+
 if (action.type ==='decrement') {
     return {
         counter: state.counter -1,
